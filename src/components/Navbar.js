@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome,faUser,faCode,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faGithub,faFacebookF,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';

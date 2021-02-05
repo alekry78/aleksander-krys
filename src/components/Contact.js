@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Navbar from "./Navbar";
 import {CSSTransition} from 'react-transition-group';
-import axios from 'axios'
 class Contact extends React.Component {
     changeSite = (name) => {
         this.props.history.push(name);
