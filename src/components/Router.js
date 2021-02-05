@@ -12,6 +12,7 @@ const Router = () =>(
             <Route path="/user" component={About}/>
             <Route path="/code" component={Cv}/>
             <Route path="/envelope" component={Contact}/>
+            <Route component={Contact}/>
         </Switch>
     </BrowserRouter>
 )
