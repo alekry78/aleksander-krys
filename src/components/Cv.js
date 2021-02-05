@@ -51,6 +51,8 @@ class CV extends React.Component {
                                                      return 'Advanced';
                                                  case 4:
                                                      return 'Expert';
+                                                 default:
+                                                     return '0';
                                              }
                                          }
                                      }
