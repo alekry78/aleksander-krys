@@ -46,7 +46,7 @@ class Contact extends React.Component {
                             <input required type="text" name="name" className="form__name" placeholder="Name"  />
                             <input required type="email" name="email" className="form__email" placeholder="Your email"   />
                             <textarea required className="form__text" name="message" placeholder="Message"  />
-                            <button type="submit" className="form__button" onClic={this.handleClick}>Send</button>
+                            <button type="submit" className="form__button" onClick={this.handleClick}>Send</button>
                         </form>
                     </div>
                 </CSSTransition>
