@@ -32,7 +32,7 @@ class Contact extends React.Component {
     //     this.setState({name:'',email:'',message:''})
     // }
     handleClick = (e) =>{
-        e.preventDefaultl
+        e.preventDefault
     }
 
     render(){
