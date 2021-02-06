@@ -34,23 +34,6 @@ class Contact extends React.Component {
         )
     }
 
-//     return (
-// <div className="Contact__homepage">
-// <Navbar changeSite={this.changeSite}/>
-// <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
-// <div className="Contact__container">
-// <form action="/contact" className="Contact__form"  name="contact" method="POST">
-// <input type="hidden" name="form-name" value="contact" />
-// <input required type="text" name="name" className="form__name" placeholder="Name"  />
-// <input required type="email" name="email" className="form__email" placeholder="Your email"   />
-// <textarea required className="form__text" name="message" placeholder="Message"  />
-// <button type="submit" className="form__button" onClick={this.handleClick}>Send</button>
-// </form>
-// </div>
-// </CSSTransition>
-// </div>
-// )
-// }
 }
 
 export default Contact;

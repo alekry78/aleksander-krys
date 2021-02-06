@@ -8,7 +8,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="about">
+            <div className="about__homepage">
                 <Navbar changeSite={this.changeSite}/>
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
                     <div className="aboutMe">
