@@ -37,7 +37,7 @@ class Contact extends React.Component {
                 <Navbar changeSite={this.changeSite}/>
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
                     <div className="Contact__container">
-                        <form action="/contact" className="Contact__form"  name="contact" method="POST">
+                        <form action="/envelope" className="Contact__form"  name="contact" method="POST">
                             <input type="hidden" name="form-name" value="contact" />
                             <input required type="text" name="name" className="form__name" placeholder="Name"  />
                             <input required type="email" name="email" className="form__email" placeholder="Your email"   />
