@@ -4,6 +4,7 @@ import App from "./App";
 import Cv from "./Cv";
 import About from "./About";
 import Contact from "./Contact";
+import Showcase from"./Showcase";
 const Router = () =>(
     <BrowserRouter>
         <Switch>
@@ -12,6 +13,7 @@ const Router = () =>(
             <Route path="/user" component={About}/>
             <Route path="/code" component={Cv}/>
             <Route path="/envelope" component={Contact}/>
+            <Route path="/desktop" component={Showcase}/>
         </Switch>
     </BrowserRouter>
 )

@@ -14,9 +14,7 @@ class App extends React.Component {
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
                     <div className="greeting">
                         <span className="const"> const user = </span>
-                        <span className="myName">
-                        (...AleksanderKrys)
-                        </span>
+                        <span className="myName">(...AleksanderKrys)</span>
                     </div>
                 </CSSTransition>
             </div>
