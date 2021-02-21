@@ -1,8 +1,11 @@
 import React from 'react';
 class Alexstagram extends React.Component {
+    alexstagram = ()=>{
+        this.props.changeSite("/alexstagram");
+    }
     render() {
         return(
-            <a href="https://aleksander-krys.com/desktop/alexstagram"><h1 className="gramLink" onClick={this.alexstagram}>Alexstagram</h1></a>
+            <h1 className="gramLink" onClick={this.alexstagram}>Alexstagram</h1>
         )
     }
 }

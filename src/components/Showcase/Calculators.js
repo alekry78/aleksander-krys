@@ -12,6 +12,11 @@ class Calculators extends React.Component {
     handleClick = (props, value) => {
         let first = this.state.first
         first[props] = parseFloat(value)
+        if(first[props] > 9){
+            first[props] = 9;
+        }else if(first[props] < 0){
+            first[props] = 0;
+        }
         this.setState({
             first: first
         })
@@ -20,24 +25,35 @@ class Calculators extends React.Component {
     handleClickSecond = (props, value) => {
         let second = this.state.second
         second[props] = parseFloat(value)
+        if(second[props] > 9){
+            second[props] = 9;
+        }else if(second[props] < 0){
+            second[props] = 0;
+        }
         this.setState({
             second:second
         })
     }
     addUnits = () =>{
+        this.setState({
+            all:[0, 0, 0, 0, 0, 0, 0, 0, 0]
+        })
         let all = this.state.all
         let len = this.state.first.length
-        for(let i = len-1; i > 0 ; i--){
-            let sum = this.state.first[i] + this.state.second[i]
+        for(let i = len -1 ; i > 0 ; i--){
+            let sum = this.state.first[i] + this.state.second[i] + all[i+1];
             if(sum > 9){
                 all[i+1] = sum%10;
                 all[i] = 1;
+
             } else{
                 all[i+1] = sum;
             }
+            console.log(all,sum);
         }
+        console.log(all);
         this.setState({
-            all:all,
+            all:all
         })
     }
     render() {
@@ -57,22 +73,14 @@ class Calculators extends React.Component {
                 </div>
                 <div className="secondLine">
                     <span className="plus" onClick={this.addUnits}>+</span>
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={0}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={1}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={2}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={3}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={4}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={5}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={6}
-                    />
-                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={7}
-                    />
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={0}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={1}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={2}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={3}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={4}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={5}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={6}/>
+                    <HandleClickSecond handleClickSecond={this.handleClickSecond} number={7}/>
                 </div>
                 <span className="line"/>
                 <div className="thirdLine">

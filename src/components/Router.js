@@ -14,6 +14,7 @@ const Router = () =>(
             <Route path="/code" component={Cv}/>
             <Route path="/envelope" component={Contact}/>
             <Route path="/desktop" component={Showcase}/>
+            <Route path="/alexstagram" component={App}/>
         </Switch>
     </BrowserRouter>
 )
