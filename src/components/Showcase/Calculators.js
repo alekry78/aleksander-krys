@@ -49,9 +49,7 @@ class Calculators extends React.Component {
             } else{
                 all[i+1] = sum;
             }
-            console.log(all,sum);
         }
-        console.log(all);
         this.setState({
             all:all
         })

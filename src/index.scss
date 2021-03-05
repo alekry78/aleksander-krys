@@ -604,8 +604,13 @@ code {
   }
 }
 /* ====================================================== */
+.alex_pres{
+  height:100vh;
+  display:flex;
+}
 .alexHome {
   background: #fafafa;
+  flex-grow:1;
 }
 
 .photo-grid {

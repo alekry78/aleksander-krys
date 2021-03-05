@@ -31,7 +31,7 @@ class About extends React.Component {
                                 restaurant's state and eventually take
                                 the blame if anything bad happened during my shift. Then I quit the job to pursue my
                                 dream of becoming a Front End Developer.
-                                I bought a 6 months long programming bootcamp at CodersLab's school and since then I am keep learning
+                                I bought a 6 months long programming bootcamp at CodersLab's school and since then I've been learning
                                 everyday during our lessons and after
                                 them. I spend approximately 10 hours a day learning new things, practicing and hoping to
                                 get my dream job. This whole website
