@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import App from "./Home/App";
-import Cv from "./Cv";
+import Cv from "./Skills/Cv";
 import About from "./About/About";
 import Contact from "./Contact";
 import Showcase from "./Showcase";
