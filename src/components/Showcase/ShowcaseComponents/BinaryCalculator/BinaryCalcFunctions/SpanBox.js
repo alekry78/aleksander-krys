@@ -1,12 +1,12 @@
 import React from 'react';
-
+import {Box} from './BoxesStyles';
 class SpanBox extends React.Component {
     handleClick= () =>{
         this.props.handleChange(this.props.number)
     }
     render() {
         return(
-            <span onClick={this.handleClick} className="box">{this.props.show}</span>
+            <Box onClick={this.handleClick}>{this.props.show}</Box>
         )
 
     }

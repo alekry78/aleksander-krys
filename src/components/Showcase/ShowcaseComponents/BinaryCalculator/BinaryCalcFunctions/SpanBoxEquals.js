@@ -1,9 +1,9 @@
 import React from 'react';
-
+import {BoxEquals} from './BoxesStyles';
 class SpanBoxEquals extends React.Component {
     render() {
         return(
-            <span className="boxEquals">{this.props.show}</span>
+            <BoxEquals className="boxEquals">{this.props.show}</BoxEquals>
         )
 
     }

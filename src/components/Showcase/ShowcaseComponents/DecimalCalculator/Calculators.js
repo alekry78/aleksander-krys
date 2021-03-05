@@ -1,7 +1,7 @@
 import React from 'react';
 import Handleclick from './CalculatorFunctions/handleClick';
 import HandleClickSecond from './CalculatorFunctions/HandleClickSecond';
-
+import {BoxEquals, Line, SmallLine, Plus, CalcHome,Header,HeaderMini} from './CalculatorStyles';
 class Calculators extends React.Component {
 
     state = {
@@ -56,10 +56,10 @@ class Calculators extends React.Component {
     }
     render() {
         return (
-            <div className="Calculator">
-                <h1 className="calculatorHeader">Decimal Calculator</h1>
-                <h3 className="calculatorHeaderMin">Click a number in order to change it</h3>
-                <div className="firstLine">
+            <CalcHome>
+                <Header>Decimal Calculator</Header>
+                <HeaderMini>Click a number in order to change it</HeaderMini>
+                <Line>
                     <Handleclick handleClick={this.handleClick} number={0}/>
                     <Handleclick handleClick={this.handleClick} number={1}/>
                     <Handleclick handleClick={this.handleClick} number={2}/>
@@ -68,9 +68,9 @@ class Calculators extends React.Component {
                     <Handleclick handleClick={this.handleClick} number={5}/>
                     <Handleclick handleClick={this.handleClick} number={6}/>
                     <Handleclick handleClick={this.handleClick} number={7}/>
-                </div>
-                <div className="secondLine">
-                    <span className="plus" onClick={this.addUnits}>+</span>
+                </Line>
+                <Line>
+                    <Plus onClick={this.addUnits}>+</Plus>
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={0}/>
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={1}/>
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={2}/>
@@ -79,20 +79,20 @@ class Calculators extends React.Component {
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={5}/>
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={6}/>
                     <HandleClickSecond handleClickSecond={this.handleClickSecond} number={7}/>
-                </div>
-                <span className="line"/>
-                <div className="thirdLine">
-                    <span className="boxEquals">{this.state.all[0]}</span>
-                    <span className="boxEquals">{this.state.all[1]}</span>
-                    <span className="boxEquals">{this.state.all[2]}</span>
-                    <span className="boxEquals">{this.state.all[3]}</span>
-                    <span className="boxEquals">{this.state.all[4]}</span>
-                    <span className="boxEquals">{this.state.all[5]}</span>
-                    <span className="boxEquals">{this.state.all[6]}</span>
-                    <span className="boxEquals">{this.state.all[7]}</span>
-                    <span className="boxEquals">{this.state.all[8]}</span>
-                </div>
-            </div>
+                </Line>
+                <SmallLine/>
+                <Line>
+                    <BoxEquals>{this.state.all[0]}</BoxEquals>
+                    <BoxEquals>{this.state.all[1]}</BoxEquals>
+                    <BoxEquals>{this.state.all[2]}</BoxEquals>
+                    <BoxEquals>{this.state.all[3]}</BoxEquals>
+                    <BoxEquals>{this.state.all[4]}</BoxEquals>
+                    <BoxEquals>{this.state.all[5]}</BoxEquals>
+                    <BoxEquals>{this.state.all[6]}</BoxEquals>
+                    <BoxEquals>{this.state.all[7]}</BoxEquals>
+                    <BoxEquals>{this.state.all[8]}</BoxEquals>
+                </Line>
+            </CalcHome>
 
         )
     }
