@@ -36,9 +36,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Skills\Cards" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Skills" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\Skills" />
       <recent name="C:\AleksanderKrys\aleksander-krys\src\components\About" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Home" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase\CalculatorFunctions" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,7 +59,7 @@
       <workItem from="1613809481618" duration="2207000" />
       <workItem from="1613907977088" duration="6195000" />
       <workItem from="1614615070563" duration="12672000" />
-      <workItem from="1614959057487" duration="3576000" />
+      <workItem from="1614959057487" duration="13483000" />
     </task>
     <servers />
   </component>
@@ -65,10 +67,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613230274201">
+    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614970722997">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410/-1680.378.1680.1020@0.0.2560.1410" timestamp="1613230274201" />
+    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410/-1680.378.1680.1020@0.0.2560.1410" timestamp="1614970722997" />
     <state x="1767" y="463" key="FileChooserDialogImpl" timestamp="1614630093907">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
