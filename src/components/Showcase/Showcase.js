@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
-import {CSSTransition,TransitionGroup} from 'react-transition-group';
+import Navbar from '../Navbar/Navbar';
+import {CSSTransition} from 'react-transition-group';
 import Card from './Card'
-import Number from "./Showcase/Number";
-import Calculators from "./Showcase/Calculators";
-import BinaryCalc from "./Showcase/BinaryCalc";
-import Alexstagram from "./Showcase/Alexstagram";
+import Calculators from "./ShowcaseComponents/DecimalCalculator/Calculators";
+import BinaryCalc from "./ShowcaseComponents/BinaryCalculator/BinaryCalc";
+import {Home ,Components, ArrowLeft, ArrowRight, TransitionContainer} from './ShowcaseStyles.js';
 class Showcase extends React.Component {
     changeSite = (name) => {
         this.props.history.push(name);
@@ -13,25 +12,15 @@ class Showcase extends React.Component {
     tab = {
         "properties":[
             {
-                "show":<Number/>,
+                "show":<Calculators/>,
                 "index":0,
                 "_id":0
             },
             {
-                "show":<Calculators/>,
+                "show":<BinaryCalc/>,
                 "index":1,
                 "_id":1
             },
-            {
-                "show":<BinaryCalc/>,
-                "index":2,
-                "_id":2
-            },
-            {
-                "show":<Alexstagram changeSite={this.changeSite}/>,
-                "index":3,
-                "_id":3
-            }
         ]
     }
     state={
@@ -51,20 +40,20 @@ class Showcase extends React.Component {
     }
     render() {
         return (
-            <div className="showcase__homepage">
+            <Home>
                 <Navbar changeSite={this.changeSite}/>
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
-                    <div className="showcase__components">
-                        <button className="arrowLeft" onClick={this.prevProperty} disabled={this.state.property.index === 0}/>
-                        <TransitionGroup className="app-container">
+                    <Components>
+                        <ArrowLeft onClick={this.prevProperty} disabled={this.state.property.index === 0}/>
+                        <TransitionContainer>
                             <CSSTransition key={this.state.property._id} timeout={600} classNames="fade">
                                 <Card property={this.state}/>
                             </CSSTransition>
-                        </TransitionGroup>
-                        <button className="arrowRight" onClick={this.nextProperty} disabled={this.state.property.index === this.tab.properties.length-1}/>
-                    </div>
+                        </TransitionContainer>
+                        <ArrowRight onClick={this.nextProperty} disabled={this.state.property.index === this.tab.properties.length-1}/>
+                    </Components>
                 </CSSTransition>
-            </div>
+            </Home>
         )
     }
 }

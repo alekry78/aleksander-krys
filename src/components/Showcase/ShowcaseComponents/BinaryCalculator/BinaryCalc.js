@@ -1,7 +1,7 @@
 import React from 'react';
 import SpanBox from './BinaryCalcFunctions/SpanBox';
 import SpanBoxEquals from './BinaryCalcFunctions/SpanBoxEquals';
-
+import {Line, SmallLine,CalcHome,Header,HeaderMini} from './BinaryCalcStyles';
 class BinaryCalc extends React.Component {
     state = {
         first: [0,0,0,0,0,0,0,0],
@@ -73,10 +73,10 @@ class BinaryCalc extends React.Component {
     }
     render() {
         return (
-            <div className="binaryCalc">
-                <h1 className="calculatorHeader">Binary Calculator</h1>
-                <h3 className="calculatorHeaderMin">Click a bit in order to change it</h3>
-                <div className="firstLine">
+            <CalcHome>
+                <Header>Binary Calculator</Header>
+                <HeaderMini>Click a bit in order to change it</HeaderMini>
+                <Line>
                     <SpanBox handleChange={this.handleChange} number={0} show={this.state.first[0]}/>
                     <SpanBox handleChange={this.handleChange} number={1} show={this.state.first[1]}/>
                     <SpanBox handleChange={this.handleChange} number={2} show={this.state.first[2]}/>
@@ -85,8 +85,8 @@ class BinaryCalc extends React.Component {
                     <SpanBox handleChange={this.handleChange} number={5} show={this.state.first[5]}/>
                     <SpanBox handleChange={this.handleChange} number={6} show={this.state.first[6]}/>
                     <SpanBox handleChange={this.handleChange} number={7} show={this.state.first[7]}/>
-                </div>
-                <div className="secondLine">
+                </Line>
+                <Line>
                     <SpanBox handleChange={this.handleChangeSecond} number={0} show={this.state.second[0]}/>
                     <SpanBox handleChange={this.handleChangeSecond} number={1} show={this.state.second[1]}/>
                     <SpanBox handleChange={this.handleChangeSecond} number={2} show={this.state.second[2]}/>
@@ -95,9 +95,9 @@ class BinaryCalc extends React.Component {
                     <SpanBox handleChange={this.handleChangeSecond} number={5} show={this.state.second[5]}/>
                     <SpanBox handleChange={this.handleChangeSecond} number={6} show={this.state.second[6]}/>
                     <SpanBox handleChange={this.handleChangeSecond} number={7} show={this.state.second[7]}/>
-                </div>
-                <span className="line"/>
-                <div className="thirdLine">
+                </Line>
+                <SmallLine/>
+                <Line>
                     <SpanBoxEquals show={this.state.all[0]}/>
                     <SpanBoxEquals show={this.state.all[1]}/>
                     <SpanBoxEquals show={this.state.all[2]}/>
@@ -107,8 +107,8 @@ class BinaryCalc extends React.Component {
                     <SpanBoxEquals show={this.state.all[6]}/>
                     <SpanBoxEquals show={this.state.all[7]}/>
                     <SpanBoxEquals show={this.state.all[8]}/>
-                </div>
-            </div>
+                </Line>
+            </CalcHome>
         )
 
     }

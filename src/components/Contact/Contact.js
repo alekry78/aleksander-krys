@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 import {CSSTransition} from 'react-transition-group';
 import emailjs from 'emailjs-com';
+import {Home,Container,Form,InputName,InputEmail,InputText,Button} from "./ContactStyles";
 class Contact extends React.Component {
     changeSite = (name) => {
         this.props.history.push(name);
@@ -18,19 +19,19 @@ class Contact extends React.Component {
     }
     render(){
         return (
-            <div className="Contact__homepage">
+            <Home>
                 <Navbar changeSite={this.changeSite}/>
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
-                    <div className="Contact__container">
-                        <form className="Contact__form" onSubmit={this.handleSubmit}>
-                            <input required type="text" name="name" className="form__name" placeholder="Name"  />
-                            <input required type="email" name="email" className="form__email" placeholder="Your email"   />
-                            <textarea required className="form__text" name="message" placeholder="Message"  />
-                            <button type="submit" className="form__button">Send</button>
-                        </form>
-                    </div>
+                    <Container>
+                        <Form onSubmit={this.handleSubmit}>
+                            <InputName required type="text" name="name" placeholder="Name"  />
+                            <InputEmail required type="email" name="email" placeholder="Your email"   />
+                            <InputText required name="message" placeholder="Message"  />
+                            <Button type="submit" className="form__button">Send</Button>
+                        </Form>
+                    </Container>
                 </CSSTransition>
-            </div>
+            </Home>
         )
     }
 

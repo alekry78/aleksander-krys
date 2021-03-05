@@ -1,6 +1,6 @@
 import React from 'react';
 import {CSSTransition} from 'react-transition-group';
-import Navbar from '../Navbar';
+import Navbar from '../Navbar/Navbar';
 import { Home, Greeting, Const, MyName } from './AppStyles';
 class App extends React.Component {
     changeSite = (name) => {

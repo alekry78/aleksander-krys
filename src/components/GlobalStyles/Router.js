@@ -1,10 +1,10 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import App from "./Home/App";
-import Cv from "./Skills/Cv";
-import About from "./About/About";
-import Contact from "./Contact";
-import Showcase from "./Showcase";
+import App from "../Home/App";
+import Cv from "../Skills/Cv";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Showcase from "../Showcase/Showcase";
 const Router = () => (
 
     <BrowserRouter>

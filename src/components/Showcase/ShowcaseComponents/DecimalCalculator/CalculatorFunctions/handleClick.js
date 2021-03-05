@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Box} from './HandleClickStyles';
 class Handleclick extends React.Component {
     oneRef=React.createRef();
     handleClick = () => {
@@ -7,7 +7,7 @@ class Handleclick extends React.Component {
     }
     render() {
         return (
-            <span onKeyUp={this.handleClick} onBlur={this.handleClick} contentEditable="true" ref={this.oneRef} suppressContentEditableWarning={true} className="box">0</span>
+            <Box onKeyUp={this.handleClick} onBlur={this.handleClick} contentEditable="true" ref={this.oneRef} suppressContentEditableWarning={true} className="box">0</Box>
         )
     }
 

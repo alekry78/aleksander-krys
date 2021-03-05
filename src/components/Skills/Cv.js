@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../Navbar";
+import Navbar from "../Navbar/Navbar";
 import {CSSTransition} from 'react-transition-group';
 import Logic from './Cards/Logic';
 import Styling from './Cards/Styling';

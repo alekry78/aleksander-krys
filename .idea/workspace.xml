@@ -36,11 +36,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Skills\Cards" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Skills" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\Skills" />
-      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\About" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase\ShowcaseComponents\DecimalCalculator" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase\ShowcaseComponents\BinaryCalculator" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase\ShowcaseComponents" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\GlobalStyles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,10 +67,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614970722997">
+    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614980826793">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410/-1680.378.1680.1020@0.0.2560.1410" timestamp="1614970722997" />
+    <state x="1588" y="498" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410/-1680.378.1680.1020@0.0.2560.1410" timestamp="1614980826793" />
+    <state x="1010" y="451" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614981601819">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1010" y="451" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1410/-1680.378.1680.1020@0.0.2560.1410" timestamp="1614981601819" />
     <state x="1767" y="463" key="FileChooserDialogImpl" timestamp="1614630093907">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
