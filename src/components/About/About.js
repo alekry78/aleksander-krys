@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import {CSSTransition} from 'react-transition-group';
+import {AboutHome,AboutMe,Container,Header,Text} from './AboutStyles';
 class About extends React.Component {
     changeSite = (name) => {
         this.props.history.push(name);
@@ -8,15 +9,15 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="about__homepage">
+            <AboutHome>
                 <Navbar changeSite={this.changeSite}/>
                 <CSSTransition in={true} appear={true} timeout={1000} classNames="fade">
-                    <div className="aboutMe">
-                        <div className="aboutContainer">
-                            <h1 className="about__header">
+                    <AboutMe>
+                        <Container>
+                            <Header>
                                 Hi, here's something about me.
-                            </h1>
-                            <p className="about__text">
+                            </Header>
+                            <Text>
                                 My name is Aleksander. I am 22 years old and I've been studying Front End technologies
                                 for about
                                 a year now. In a meantime I've been in college for one semester on IT profile but I
@@ -38,11 +39,11 @@ class About extends React.Component {
                                 is built using React to showcase some of my skills. Switching sites is done with
                                 React-router. I am C1 in English if someone is
                                 interested.
-                            </p>
-                        </div>
-                    </div>
+                            </Text>
+                        </Container>
+                    </AboutMe>
                 </CSSTransition>
-            </div>
+            </AboutHome>
         )
     }
 }

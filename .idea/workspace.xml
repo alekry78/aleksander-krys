@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WesBos/Advanced-React/sick-fits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -36,6 +36,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\About" />
+      <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Home" />
       <recent name="C:\AleksanderKrys\aleksander-krys\src\components\Showcase\CalculatorFunctions" />
     </key>
   </component>
@@ -55,6 +57,7 @@
       <workItem from="1613809481618" duration="2207000" />
       <workItem from="1613907977088" duration="6195000" />
       <workItem from="1614615070563" duration="12672000" />
+      <workItem from="1614959057487" duration="3576000" />
     </task>
     <servers />
   </component>
