@@ -14,8 +14,8 @@ export const ArrowLeft = styled.button`
   width: 5rem;
   height: 5rem;
   border: none;
-  border-left: 1rem solid #2EC4B6;
-  border-top: 1rem solid #2EC4B6;
+  border-left: 0.5rem solid #2EC4B6;
+  border-top: 0.5rem solid #2EC4B6;
   transform: rotate(-45deg);
   cursor: pointer;
   background: none;
@@ -30,8 +30,8 @@ export const ArrowRight = styled.button`
   width: 5rem;
   height: 5rem;
   border: none;
-  border-left: 1rem solid #2EC4B6;
-  border-top: 1rem solid #2EC4B6;
+  border-left: 0.5rem solid #2EC4B6;
+  border-top: 0.5rem solid #2EC4B6;
   cursor: pointer;
   background: none;
   transform: rotate(135deg);
